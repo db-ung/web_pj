@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* iPhone 14 & 15 Pro Max - 1 */
+
+.back{
+    position: absolute;
+    width: 500px;
+    height: 932px;
+    left: calc(50% - 500px/2 + 42px);
+    top: 74px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.47);
+    border-radius: 30px;
+}
+
+
+/* 회원가입 */
+
+.head_txt{
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 70px;
+    top: 60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+
+
+/* 아이디 */
+.txt_{
+    position: absolute;
+    width: 283px;
+    height: 22px;
+    left: 70px;
+    top: 120px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
+
+}
+
+
+
+/* 아이디 박스 2 */
+.id_txtbox{
+
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 260px;
+    height: 45px;
+    left: 70px;
+    top: 150px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+/* 비밀번호 */
+.txt1_{
+    position: absolute;
+    width: 280px;
+    height: 25px;
+    left: 70px;
+    top: 200px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
+
+
+}
+
+
+
+/* 텍스트 박스 basic 3 */
+.txtbox{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 360px;
+    height: 45px;
+    left: 70px;
+    top: 230px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+
+/* 비밀번호 확인 */
+
+
+/* top: 281px; */
+
+
+
+
+/* 이름 */
+
+
+/* top: 356px; */
+
+
+
+
+/* 전화번호 */
+
+
+/* top: 556px; */
+
+
+
+
+
+
+
+/* 이메일 주소 */
+
+
+/* top: 631px; */
+
+
+
+
+
+/* 이메일주소 9 */
+.emailbox1{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 170px;
+    height: 45px;
+    left: 70px;
+    top: 680px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+/* 생년월일 텍스트 */
+.birth_txt{
+    position: absolute;
+    width: 283px;
+    height: 20px;
+    left: 70px;
+    top: 730px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
+
+}
+
+
+/* 생년월일 14 */
+.birth1{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 70px;
+    top: 760px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+
+/* 생년월일 일 15 */
+.birth3{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 320px;
+    top: 760px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+    
+}
+
+
+/* 생년월일 월 16 */
+.birth2{
+	box-sizing: border-box;
+    
+    position: absolute;
+    width: 110px;
+    height: 45px;
+    left: 195px;
+    top: 760px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+	
+    
+}
+
+
+
+
+
+/* 이메일박스 12 */
+.emailbox3{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    left: 280px;
+    top: 680px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+/* 주소 텍스트 */
+.address_txt{
+    position: absolute;
+    width: 283px;
+    height: 20px;
+    left: 70px;
+    top: 431px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #000000;
+
+}
+
+
+
+/* 주소 박스 6 */
+.address_box{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 260px;
+    height: 45px;
+    left: 70px;
+    top: 470px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+
+/* 중복확인 버튼 13 */
+.btn1{
+    position: absolute;
+    width: 90px;
+    height: 45px;
+    left: 340px;
+    top: 151px;
+    
+    background: lightblue;
+
+}
+
+
+/* 중복확인 텍스트 */
+.ok_txt{
+    position: absolute;
+    width: 48px;
+    height: 16px;
+    left: calc(50% - 48px/2 + 135px);
+    top: calc(50% - 16px/2 - 293px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+}
+
+
+
+
+
+
+/* 검색 텍스트 */
+.search_txt{
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    left: calc(50% - 24px/2 + 135px);
+    top: calc(50% - 16px/2 + 7px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+}
+/* identical to box height */
+
+
+
+
+
+/* 가입완료 버튼 17 */
+.finish_btn{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 110px;
+    top: 830px;
+    
+    background: #9A98F4;
+
+}
+
+
+
+
+
+
+
+
+
+/* 취소 버튼18 */
+.no_btn{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    right: 100px;
+    top: 830px;
+    background: #9A98F4;
+}
+
+/* 가입완료 */
+.finish_txt{
+	position: absolute;
+	width: 70px;
+	height: 16px;
+	left: calc(50% - 48px/2 - 80px);
+	top: calc(50% - 16px/2 + 379px);
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	/* identical to box height */
+	
+	color: #FFFFFF;
+	
+}
+
+
+
+
+/* 가입완료 */
+.no_txt{
+	position: absolute;
+	width: 70px;
+	height: 16px;
+	left: calc(50% - 48px/2 + 90px);
+	top: calc(50% - 16px/2 + 379px);
+	
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	/* identical to box height */
+	
+	color: #FFFFFF;
+	
+}
+/* Rectangle 19 */
+.search_box{
+	position: absolute;
+	width: 90px;
+	height: 45px;
+	left: 340px;
+	top: 470px;
+	
+	background: #9A98F4;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

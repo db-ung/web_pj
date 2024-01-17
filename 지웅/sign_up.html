@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="sign_up.css">
+</head>
+<body>
+	
+	
+	<div class="back">
+		<div class="head_txt">회원가입</div>
+		<div>
+			<h1 class="txt_">아이디</h1>
+			<input class="id_txtbox" type="text" id="id" name="id"/>
+			<input class="btn1" type="button" id="id" name="id" value="중복확인"/>	
+			
+			<h1 class="txt1_">비밀번호</h1>
+			<input class="txtbox" type="text">
+			
+			<h1 class="txt1_" style="top:280px">비밀번호 확인</h1>
+			<input class="txtbox" type="text" style="top:310px">
+			
+			<h1 class="txt1_" style="top:360px">이름</h1>	
+			<input class="txtbox" type="text" style="top:390px">
+			
+			<h1 class="txt1_" style="top:440px">주소</h1>	
+			<input class="address_box" type="text">
+			<label class="search_txt">검색</label>
+			<input class="search_box" type="button" id="id" name="id"/>
+			
+			<input class="txtbox" style="top:520px" type="text">
+			
+			<h1 class="txt1_" style="top:570px">전화번호</h1>
+			<input class="txtbox" style="top:600px" type="text">
+			
+			<h1 class="txt1_" style="top:650px">이메일 주소</h1>
+			<input class="emailbox1" type="text">
+			<select class="emailbox3">
+				<option>@naver.com</option>
+				<option>@daum.net</option>
+				<option>@gmail.com</option>		
+			</select>
+			<div>
+				<h1 class="birth_txt">생년월일</h1>
+				<select class="birth1">
+					<script>
+						for(let i=1920;i<=2005;i++){ 
+						   document.write("<option>"+i+"년</option>")
+						}
+					</script>
+				</select>
+				<select class="birth2">
+					<script>
+						for(let i=1;i<=12;i++){ 
+						   document.write("<option>"+i+"월</option>")
+						}
+					</script>
+				</select>
+				
+				<select class="birth3">
+					<script>
+						for(let i=1;i<=31;i++){ 
+						   document.write("<option>"+i+"일</option>")
+						}
+					</script>
+				</select>
+			</div>
+			
+			<input class="finish_btn" type="button">
+			<label class="finish_txt">가입완료</label>
+			
+			<input class="no_btn" type="button">
+			<label class="no_txt">가입취소</label>
+		</div>
+	</div>
+</body>
+</html>
