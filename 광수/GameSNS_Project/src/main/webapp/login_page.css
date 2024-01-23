@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* 로그인 */
+.back{
+    position: absolute;
+    width: 500px;
+    height: 932px;
+    left: calc(50% - 500px/2);
+    top: 15px;
+    
+    background: #EFECE4;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.47);
+    border-radius: 30px;
+
+}
+
+
+/* 아이디 박스 */
+.id_box{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 360px;
+    height: 45px;
+    left: 70px;
+    top: 325px;
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+
+}
+
+
+/* 비밀번호 박스 */
+.pw_box{
+    position: absolute;
+    width: 360px;
+    height: 45px;
+    left: 70px;
+    top: 400px;
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+
+/* 2번 1 */
+.picture{
+    position: absolute;
+    width: 500px;
+    height: 325px;
+    left: 0px;
+    top: 0px;
+    border-radius: 30px;
+}
+
+
+/* 로그인 버튼 */
+.login_btn{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 360px;
+    height: 45px;
+    left: 70px;
+    top: 562px;
+    
+    background: #979590;
+    border: 1px solid #000000;
+    border-radius: 10px;
+
+}
+
+
+/* id */
+.id_txt{
+    position: absolute;
+    width: 12px;
+    height: 16px;
+    left: calc(50% - 12px/2);
+    top: calc(50% - 16px/2 - 119px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* password */
+.pw_txt{
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    left: calc(50% - 60px/2);
+    top: calc(50% - 16px/2 - 44px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* 아이디 찾기 버튼 */
+.id_search_btn{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 170px;
+    height: 45px;
+    left: 70px;
+    top: 637px;
+    
+    background: #8F7DB1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+
+
+/* 비밀번호 찾기 버튼 */
+.pw_search_btn{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 170px;
+    height: 45px;
+    left: 260px;
+    top: 637px;
+    
+    background: #8F7DB1;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+
+/* 아이디 찾기 */
+.id_search_txt{
+    position: absolute;
+    width: 64px;
+    height: 16px;
+    left: calc(50% - 64px/2 - 95px);
+    top: calc(50% - 16px/2 + 193px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    color: rgba(0, 0, 0, 0.72);
+}
+
+
+
+/* login */
+.login_txt{
+
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    left: calc(50% - 30px/2);
+    top: calc(50% - 16px/2 + 118px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    color: rgba(0, 0, 0, 0.72);
+
+}
+
+
+
+/* 비밀번호 찾기 */
+.pw_search_txt{
+    position: absolute;
+    width: 76px;
+    height: 16px;
+    left: calc(50% - 76px/2 + 95px);
+    top: calc(50% - 16px/2 + 193px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    color: rgba(0, 0, 0, 0.72);
+}
+
+

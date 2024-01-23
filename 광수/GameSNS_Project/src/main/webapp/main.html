@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>테스트용 사이트</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		function showLoginSuccessAlert() {
+			alert('로그인에 성공했습니다!');
+		}
+
+		// URL에서 'success' 파라미터가 있는지 확인하고, 있다면 알림창을 띄웁니다.
+		window.onload = function () {
+			const urlParams = new URLSearchParams(window.location.search);
+			if (urlParams.has('success')) {
+				showLoginSuccessAlert();
+			}
+		};
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="main.html">테스트용 사이트</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="board1.html" id="board1">게시판 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="board2.html" id="board1">게시판 2</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="login.html" id="login">로그인</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+    <div class="search-container">
+        <div class="col-lg-8">
+            <form action="search.do" method="get" id ="searchForm">
+                <!-- 검색 입력 필드 -->
+                <input class="input" type="text" name="searchKeyword" id="searchInput" >
+                <!-- 검색 아이콘 (SVG) -->                
+                    <svg viewBox="0 0 24 24" class="search__icon" style="cursor: pointer; fill: black;" onclick="search()">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>                
+            </form>
+        </div>
+    </div>
+</div>
+<hr>
+<div id = "resultContainer">
+	<!-- getlist.jsp 에서 나온 테이블들이 여기서 표현되면 좋겠다.-->
+	
+</div>
+<script>
+    // Ajax로 서버에서 데이터를 가져와서 resultContainer에 표시하는 함수
+    function fetchAndDisplayData() {
+        // Ajax 요청 시작
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "getlist.jsp", true);
+        
+        // Ajax 요청이 완료되면 실행되는 콜백 함수
+        xhr.onload = function () {
+            if (xhr.status == 200) {
+                // 서버에서 받아온 HTML을 resultContainer에 삽입
+                document.getElementById("resultContainer").innerHTML = xhr.responseText;
+            }
+        };
+        
+        // Ajax 요청 전송
+        xhr.send();
+    }
+
+    // 페이지 로드 시 초기 데이터 로딩
+    window.onload = function () {
+        fetchAndDisplayData();
+    };
+
+    // 폼 submit 이벤트를 가로채서 Ajax로 데이터를 가져와서 페이지 갱신
+    document.getElementById("searchForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // 기존의 submit 이벤트 동작 방지
+
+        // 검색어를 폼 데이터에서 가져옴
+        var keyword = document.getElementById("searchInput").value;
+        if (searchInput.value.trim() === "") {
+        alert("검색어를 입력하세요.");
+        return false;  // 제출 막기
+    	}else{        
+
+        // Ajax로 서버에서 데이터를 가져와서 resultContainer에 표시
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "search.do?searchKeyword=" + encodeURIComponent(keyword), true);
+        xhr.onload = function () {
+            if (xhr.status == 200) {
+                document.getElementById("resultContainer").innerHTML = xhr.responseText;
+            }
+        };
+        
+        xhr.send();
+        }
+    });
+</script>
+
+<!-- 코드 미작동 -->
+	<script>
+    function search() {
+         const searchInput = document.getElementById("searchInput");
+    if (searchInput.value.trim() === "") {
+        alert("검색어를 입력하세요.");
+        return false;  // 제출 막기
+    }
+    document.getElementById("searchForm").submit();
+    }
+    
+    
+</script>
+
+			
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+					
+
+			
+</body>
+
+</html>
