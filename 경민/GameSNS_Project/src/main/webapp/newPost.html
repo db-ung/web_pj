@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 작성하기</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="main.html">테스트용 사이트</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="board1.html">게시판 1</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>새로운 글 작성</h3>
+        <form action = "insert.doPosting" id="newPostForm">
+            <div class="form-group">
+				<label>태그 : <select name="tag">
+					<option>기타</option>
+					<option>LoL</option>
+					<option>FIFA</option>
+					<option>메이플스토리</option>
+					<option>던전앤파이터</option>
+					<option>몬스터헌터</option>
+					<option>PalWorld</option>
+				</select></label><br>
+                <label for="postTitle">제목</label>
+                <input type="text" class="form-control" id="TITLE" name="TITLE">
+            </div>
+            <div class="form-group">
+                <label for="postContent">내용</label>
+                <textarea class="form-control" id="CONTENT" name="CONTENT" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control-file" id="FILE">
+            </div>
+            <input class="btn btn-primary" type="submit" id="postSubmit" value="작성 완료">
+			<input class="no_btn" type="button" onClick="location.href='main.html'" value="취소">
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
