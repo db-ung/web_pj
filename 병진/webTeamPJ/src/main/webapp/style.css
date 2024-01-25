@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+    body {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+        margin-bottom: 30px;
+        background-color: gray;
+        color: white;
+    }
