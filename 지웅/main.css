@@ -1,47 +1,72 @@
-/*하나*/
+/* Section 1 */
 .back{
     box-sizing: border-box;
-
-    margin: auto;
+    
     position: relative;
     width: 1850px;
-    height: 1920px;
-
+    height: 1940px;
+    margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2px;
+    
+}
+
+
+/* 메인 프로필 */
+.pro{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    left: 56px;
+    top: 22px;
+    
+    background: #D9D9D9;
 
 }
+
+
+/* 카테고리 리스트 */
+.box{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 108px;
+    height: 500px;
+    left: 22px;
+    top: 274px;
+    
+    background: #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* 로그아웃 버튼 */
+.logout{
+    position: absolute;
+   
+    left: 1610px;
+    top: 20px;
+    
+    
+
+}
+
 
 /* div메인 */
 .ground{
     box-sizing: border-box;
-    display: block;
+    
     position: relative;
     width: 1180px;
-    height: 1920px;
-    margin: auto;
+    height: 1650px;
+    left: 351px;
+    top: 260px;
+    
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-
-}
-
-
-/* 검색박스 */
-.search{
-    box-sizing: border-box;
-    
-    position: absolute;
-    width: 900px;
-    height: 70px;
-    left: 140px;
-    top: 30px;
-    
-    padding: 15px;
-    font-size: 15px;
-    background: #D9D9D9;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 
 }
 
@@ -52,9 +77,9 @@
     
     position: absolute;
     width: 1150px;
-    height: 1700px;
+    height: 1600px;
     left: 15px;
-    top: 180px;
+    top: 25px;
     
     background: #D9D9D9;
     opacity: 0.5;
@@ -63,123 +88,148 @@
 }
 
 
-/* 로고위치 */
-.side_picture{
-    position: absolute;
-    width: 316px;
-    height: 313px;
-    left: 1165px;
-    top: 343px;
-    
-    
-
-}
 
 
 /* Rectangle 5 */
-.head{
+.post{
+
     position: absolute;
     width: 999px;
-    height: 80px;
-    left: 90px;
-    top: 220px;
+    height: 50px;
+    left: 50px;
+    top: 20px;
     
     background: #987F7F;
-    
 }
 
+
+/* 검색박스 */
+.search{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 900px;
+    height: 70px;
+    left: 490px;
+    top: 30px;
+    font-size: 15px;
+    padding: 15px;
+    background: #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
 
 /* 돋보기 사진 등등 */
 .search_but{
     position: absolute;
-    
+    width: 60px;
     height: 60px;
-    left: 1050px;
-    top: 35px;
+    left: 1430px;
+    top: 40px;
     
     background: #D9D9D9;
 
-
-}    
-
-/* 카테고리 리스트 */
-.side_bar{
-    box-sizing: border-box;
-
-    position: fixed;
-    width: 300px;
-    height: 500px;
-    left: 10px;
-    top: 180px;
-    
-    background: #D9D9D9;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-
 }
 
-
-/* 메인 프로필 */
-.pro{
-    position: absolute;
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
-    background: #D9D9D9;
-
-}
-
-
-/* 로그아웃 버튼 */
-.logout{
-    position: absolute;
-    width: 220px;
-    height: 38px;
-    left: 1612px;
-    top: 21px;
-
-    background: #D9D9D9;
-
-
-}
-
-button>img{
+.search_but img{
     width: 50px;
     height: 50px;
 }
 
-/* Desktop - 1 */
+.first_{
+    box-sizing: border-box;
+
+    position:fixed;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 250px;
+
+    background: #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.second_{
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 490px;
+
+    background: #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.third_{
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 370px;
+
+    background: #D9D9D9;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+
+}
+
+
 .backgr{
-    height:200px;
     
-    background: #686DE9;
-    
+    background-image: url('KakaoTalk_20240131_100105290.png'); /* 이미지 파일 경로 설정 */
+    background-size: cover; /* 화면에 꽉 차도록 배경 이미지 크기 조절 */
+    background-position: center; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    height: 100vh; /* 화면 높이에 따라 배경 이미지 크기 조절 */
+    margin:auto; /* body의 기본 마진 제거 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0F76; /* 텍스트 색상 설정 */
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
 }
 
-.side_bar > li{
-    list-style: none;
-    padding: 5px;
-    margin: 5px;
-}
-.test li{
+
+
+
+.post li{
+    padding-top: 5px;
     float: left;
-    padding-right: 75px;
-    text-align: center;
     list-style: none;
 }
 
-.test li::after{
-    padding-left:170px;
+.post li:first-child{
+    padding-left: 50px;
+}
+.post li:first-child:after {
+    
+    padding-left: 100px;
+    content: "|";
+}
+.post li:nth-child(2){
+    padding-left:250px;
+}
+.post li:nth-child(2):after{
+    padding-left:250px;
     content: "|";
 }
 
-.test li:last-child::after{
-    
-    content: "";
-    
+.post li:last-child { padding-left: 100px; }
+
+.postt{
+    position: absolute;
+    left: 90px;
+    top: 125px;
 }
-.test li:first-child{
-    padding-left: 100px;
-}
-.test li:nth-last-child{
-    padding-right: 0px;
+
+.postt li{
+    list-style: none;
+    margin:3px;
 }
