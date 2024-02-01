@@ -1,10 +1,10 @@
-/* Section 1 */
+/* Section 1  https://rebornbb.tistory.com/entry/CSS-22-05-18-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0-%E2%98%91#*/
 .back{
     box-sizing: border-box;
     
     position: relative;
     width: 1850px;
-    height: 1940px;
+    height: 1080px;
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2px;
@@ -25,32 +25,12 @@
 
 }
 
-
-/* 카테고리 리스트 */
-.box{
-    box-sizing: border-box;
-    
-    position: absolute;
-    width: 108px;
-    height: 500px;
-    left: 22px;
-    top: 274px;
-    
-    background: #D9D9D9;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-
-}
-
-
 /* 로그아웃 버튼 */
 .logout{
     position: absolute;
    
     left: 1610px;
     top: 20px;
-    
-    
-
 }
 
 
@@ -60,8 +40,8 @@
     
     position: relative;
     width: 1180px;
-    height: 1650px;
-    left: 351px;
+    height: 900px;
+    left: 350px;
     top: 260px;
     
     background: #FFFFFF;
@@ -77,7 +57,7 @@
     
     position: absolute;
     width: 1150px;
-    height: 1600px;
+    height: 850px;
     left: 15px;
     top: 25px;
     
@@ -86,22 +66,6 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
 
 }
-
-
-
-
-/* Rectangle 5 */
-.post{
-
-    position: absolute;
-    width: 999px;
-    height: 50px;
-    left: 50px;
-    top: 20px;
-    
-    background: #987F7F;
-}
-
 
 /* 검색박스 */
 .search{
@@ -182,7 +146,7 @@
 
 .backgr{
     
-    background-image: url('KakaoTalk_20240131_100105290.png'); /* 이미지 파일 경로 설정 */
+    background-image: url('https://github.com/db-ung/web_pj/blob/main/%EC%9E%A1%EB%8F%99%EC%82%AC%EB%8B%88/KakaoTalk_20240131_094939254-removebg-preview.png?raw=true'); /* 이미지 파일 경로 설정 */
     background-size: cover; /* 화면에 꽉 차도록 배경 이미지 크기 조절 */
     background-position: center; /* 이미지를 가운데 정렬 */
     background-repeat: no-repeat; /* 이미지 반복 방지 */
@@ -191,45 +155,64 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0E0F76; /* 텍스트 색상 설정 */
-    font-size: 24px;
+    background-color:rgb(16, 13, 58); /* 텍스트 색상 설정 */
     font-family: 'Arial', sans-serif;
 }
 
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  section.notice {
+    padding: 80px 0;
+  }
+  
+  
+  h2 { font-weight: border; }
 
+    .grey { 
+     color: #727272;}
+     
 
-.post li{
-    padding-top: 5px;
-    float: left;
-    list-style: none;
-}
+            table {
+            width: 100%;
+            border-top: 1px solid #d3d3d3;
+            border-collapse: collapse;
+            }
+            th { background-color:lightblue ; 
+            border-top: 3px solid #727272;
+            }
+            th, td {
+            border-bottom: 1px solid gray;
+            padding: 15px;
+            }
+            td{
+                font-size: 14px;
+            }
 
-.post li:first-child{
-    padding-left: 50px;
-}
-.post li:first-child:after {
-    
-    padding-left: 100px;
-    content: "|";
-}
-.post li:nth-child(2){
-    padding-left:250px;
-}
-.post li:nth-child(2):after{
-    padding-left:250px;
-    content: "|";
-}
+  .greylist {
+  width: 50px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: grey;
+  border: solid 2px white;
+  border-radius: 5px;
+  }
+  .gradient {
+  width: 80px;
+  height: 30px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  background: linear-gradient( to bottom, grey, black );
+  border: solid 2px white;
+  border-radius: 5px;
+  }
 
-.post li:last-child { padding-left: 100px; }
+.left {text-align: left;}
+.right {  float: right;}
+.center { text-align: center;}
 
-.postt{
-    position: absolute;
-    left: 90px;
-    top: 125px;
-}
-
-.postt li{
-    list-style: none;
-    margin:3px;
-}
