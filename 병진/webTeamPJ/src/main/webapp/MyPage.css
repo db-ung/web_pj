@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* 정보 수정 */
+.back{
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 800px;
+    height: 900px;
+    left: 560px;
+    top: 90px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+
+}
+
+
+/* 아이디b */
+.bx{
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    left: 80px;
+    top: -10px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    display: inline-block;
+}
+
+
+/* 아이디 */
+.txt{
+    text-align: center;
+    margin: 10px;
+
+}
+
+
+/* 수정하기 */
+.fix{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 65px;
+    top: 830px;
+    
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    background: #686DE9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+
+}
+
+.userDel{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 250px;
+    top: 830px;
+    
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    background: #686DE9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+
+}
+
+
+/* 뒤로가기 */
+.bback{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    right: 65px;
+    top: 830px;
+    
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    background: #A6A6A6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+
+}
+
+
+/* 로고 */
+.logo{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    top: 30px;
+    border-radius: 50%;
+    background: #D9D9D9;
+
+}
+
+li{
+    margin-top: 100px;
+    position: relative;
+    top: 17px;
+    left: 55px;
+    list-style: none;
+    font-size: 14px;
+    
+    
+}
+.ull{
+    left: 115px;
+    top: 148px;
+}

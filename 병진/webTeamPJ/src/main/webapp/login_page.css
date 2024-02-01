@@ -1,0 +1,221 @@
+@charset "UTF-8";/* 로그인 */
+.back{
+    position: absolute;
+    width: 500px;
+    height: 430px;
+    left: calc(50% - 500px/2);
+    top: 350px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+/* 아이디 입력창 */
+.id_box{
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 50px;
+    top: 51px;
+    font-size:14px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+/* 비밀번호 입력창 */
+.pw_box{
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 50px;
+    top: 126px;
+    font-size:14px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* 2번 1 */
+.picture{
+    position: absolute;
+    width: 397px;
+    height: 372px;
+    left: calc(50% - 397px/2 - 1.5px);
+    top: -300px;
+    
+    background: url(로고-removebg-preview.png);
+}
+
+
+/* 로그인 버튼 */
+.login_btn{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 50px;
+    top: 267px;
+    background: #686DE9;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+
+}
+
+
+/* id */
+.id_txt{
+    position: absolute;
+    width: 56px;
+    height: 24px;
+    left: 222px;
+    top: 280px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;
+
+}
+
+
+
+/* password */
+.pw_txt{
+    position: absolute;
+    width: 60px;
+    height: 16px;
+    left: calc(50% - 60px/2);
+    top: calc(50% - 16px/2 - 44px);
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* 아이디 찾기 하이퍼링크 */
+.id_search{
+    position: absolute;
+    width: 100px;
+    height: 18px;
+    left: 66px;
+    top: 367px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    
+    color: gray;
+    
+}
+
+
+/* 비밀번호 찾기 하이퍼링크*/
+.pw_search{
+    position: absolute;
+    width: 100px;
+    height: 18px;
+    left: 200px;
+    top: 366px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    
+    color: gray;
+
+}
+
+
+
+
+
+/* login */
+.login_txt{
+    position: absolute;
+    width: 100px;
+    height: 24px;
+    left: 222px;
+    top: 280px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;
+
+}
+
+
+
+/* 회원가입 */
+.sign_up_txt{
+    position: absolute;
+    width: 100px;
+    height: 18px;
+    left: 334px;
+    top: 367px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+
+    color: gray;
+}
+
+ul{
+    list-style: none;
+    padding: 20px 0 35px;
+    text-align: center;
+    top: 365px;
+}
+
+.box{
+    letter-spacing: -.5px;
+}
+
+
+

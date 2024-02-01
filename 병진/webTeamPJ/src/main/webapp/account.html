@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>회원가입</title>
+	<link rel="stylesheet" href="account_page.css">
+</head>
+
+<body>
+	<form action="insert.do" onsubmit="successSU()">
+		<div class="back">
+			<div class="head_txt">회원가입</div>
+			<div>
+				<!-- 아이디 -->
+				<h1 class="txt_">아이디</h1>
+				<input class="id_txtbox" type="text" id="username" name="id" placeholder="아이디" />
+
+				<!-- 닉네임 -->
+				<h1 class="txt1_" style="top: 80px">닉네임</h1>
+				<input class="txtbox" type="text" id="nickname" name="nickname" placeholder="닉네임">
+
+				<!-- 비밀번호 -->
+				<h1 class="txt1_" style="top: 160px">비밀번호</h1>
+				<input class="txtbox" type="password" id="pw" name="pw" placeholder="비밀번호">
+
+				<!-- 이름 -->
+				<h1 class="txt1_" style="top: 240px">이름</h1>
+				<input class="txtbox" type="text" id="name" name="name" placeholder="이름">
+
+				<!-- 전화번호 -->
+				<h1 class="txt1_" style="top: 320px">전화번호</h1>
+				<input class="txtbox" style="top: 350px" type="text" id="tel" name="tel" placeholder="전화번호">
+
+				<!-- 주소 -->
+				<h1 class="txt1_" style="top: 400px">주소</h1>
+				<input class="address_box" type="text" placeholder="주소" id="address_" name="address">
+				<input class="search_box" type="button" onclick="address_search()" value="검색" />
+				<input class="txtbox" style="top: 480px" type="text" placeholder="상세주소" id="detailAddress"
+					name="detail_address">
+
+				<!-- 이메일 -->
+				<h1 class="txt1_" style="top: 530px">이메일</h1>
+				<input class="emailbox1" type="text" placeholder="이메일" name="frontM">
+				<select class="emailbox3" name="LastM">
+					<option value="@naver.com">@naver.com</option>
+					<option value="@daum.net">@daum.net</option>
+					<option value="@gmail.com">@gmail.com</option>
+				</select>
+
+				<!-- 생년월일 -->
+				<div>
+					<h1 class="birth_txt">생년월일</h1>
+					<select class="birth1" name="year">
+						<script>
+							for (let i = 1920; i <= 2005; i++) {
+								document.write("<option>" + i + "년</option>")
+							}
+						</script>
+					</select>
+					<select class="birth2" name="month">
+						<script>
+							for (let i = 1; i <= 12; i++) {
+								document.write("<option>" + i + "월</option>")
+							}
+						</script>
+					</select>
+					<select class="birth3" name="day">
+						<script>
+							for (let i = 1; i <= 31; i++) {
+								document.write("<option>" + i + "일</option>")
+							}
+						</script>
+					</select>
+				</div>
+
+				<!-- 가입 버튼 및 취소 버튼 -->
+				<input class="finish_btn" type="submit" value="가입완료">
+				<input class="no_btn" type="button" onClick="location.href='main.html'" value="취소">
+			</div>
+		</div>
+	</form>>
+	<script>
+		function address_search() {
+			new daum.Postcode({
+				oncomplete: function (data) {
+					// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+					// 각 주소의 노출 규칙에 따라 주소를 조합한다.
+					// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+					var addr = ''; // 주소 변수
+					var extraAddr = ''; // 참고항목 변수
+
+					// 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+					if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+						addr = data.roadAddress;
+					} else { // 사용자가 지번 주소를 선택했을 경우(J)
+						addr = data.jibunAddress;
+					}
+
+					// 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+					if (data.userSelectedType === 'R') {
+						// 법정동명이 있을 경우 추가한다. (법정리는 제외)
+						// 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+						if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
+							extraAddr += data.bname;
+						}
+						// 건물명이 있고, 공동주택일 경우 추가한다.
+						if (data.buildingName !== '' && data.apartment === 'Y') {
+							extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+						}
+						// 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+						if (extraAddr !== '') {
+							extraAddr = ' (' + extraAddr + ')';
+						}
+
+					}
+
+
+
+					document.getElementById("address_").value = addr;
+					// 커서를 상세주소 필드로 이동한다.
+					document.getElementById("detailAddress").focus();
+				}
+			}).open();
+		}
+	</script>
+	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</body>
+
+</html>
