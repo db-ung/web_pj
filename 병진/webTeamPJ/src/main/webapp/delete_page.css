@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* Group 1 */
+
+/* position: absolute;
+width: 1380px;
+height: 1080px;
+left: 30px;
+top: 0px; */
+
+
+
+/* 탈퇴페이지 */
+.back{
+    position: absolute;
+    width: 500px;
+    height: 430px;
+    left: calc(50% - 500px/2);
+    top: 350px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+
+
+/* 프로필 */
+.pimg{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    border-radius: 50%;
+    background: #D9D9D9;
+
+}
+
+
+/* 이름 */
+.name_txt{
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    left: 195px;
+    top: 45px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+    
+
+}
+
+
+
+/* 닉네임 */
+.nickname{
+    position: absolute;
+    height: 29px;
+    left: 160px;
+    top: 60px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+
+}
+
+
+
+/* 비밀번호 입력 */
+.pw_txt{
+    position: absolute;
+    width: 155px;
+    height: 30px;
+    left: 0px;
+    top: 194px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+
+}
+
+
+
+/* 정말 탈퇴? */
+.ck_txt{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 390px;
+    top: 423px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #000000;
+
+}
+
+
+
+/* 탈퇴하기 */
+.true_bt{
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    left: 40px;
+    top: 300px;
+    
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background: #686DE9;
+
+    cursor: pointer;
+
+}
+
+
+/* 취소 */
+.false_bt{
+    position: absolute;
+    width: 200px;
+    height: 75px;
+    right: 40px;
+    top: 300px;
+    
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background: #A6A6A6;
+    cursor: pointer;
+}
+
+
+/* 비밀번호 상자 */
+.pw_bx{
+    box-sizing: border-box;
+
+    font-size: 15px;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 130px;
+    top: 200px;
+
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+
+/* 여기안에 쓸만한 내용 */
+.bx_xyz{
+    box-sizing: border-box;
+    font-size: 16px;
+    position: absolute;
+    width: 550px;
+    height: 200px;
+    left: 175px;
+    top: 190px;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* 체크박스 */
+.check_bx{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 360px;
+    top: 420px;
+    border-radius: 50%;
+    background: #D9D9D9;
+
+}
+
+/* 로고 */
+.logo{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    top: 30px;
+    border-radius: 50%;
+    background: #D9D9D9;
+
+}
+
+
+/* title */
+.title{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 120px;
+    top: 30px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+    
+    color: #000000;
+
+}
+
+ul{
+    list-style: none;
+}
+
+/* 로고-removebg-preview 1 */
+.logoto{
+    position: absolute;
+    width: 397px;
+    height: 372px;
+    left: calc(50% - 200px);
+    top: 55px;
+}

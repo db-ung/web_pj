@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* 전체 페이지 스타일 */
+body {
+    margin: 0; /* 기본 margin 제거 */
+    font-family: 'Inter', sans-serif; /* 기본 폰트 지정 */
+}
+
+/* 회원가입 폼 스타일 */
+.back {
+    position: absolute;
+    width: 500px;
+    height: auto; /* 높이를 자동으로 조절 */
+    left: calc(50% - 500px/2 + 42px);
+    top: 74px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.47);
+    border-radius: 30px;
+    padding: 20px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* padding 포함한 크기 설정 */
+}
+
+/* 제목 스타일 */
+.head_txt {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 20px; /* 아래 여백 추가 */
+}
+
+/* 텍스트 스타일 공통 속성 */
+.txt_, .txt1_, .birth_txt, .address_txt {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 20px; /* 위 여백 추가 */
+}
+
+/* 텍스트박스 공통 스타일 */
+.txtbox, .id_txtbox, .address_box, .emailbox1, .birth1, .birth2, .birth3, .emailbox3 {
+    width: 100%;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px; /* 위 여백 추가 */
+}
+
+/* 중복확인 버튼 스타일 */
+.btn1 {
+    width: 100%;
+    height: 45px;
+    background: lightblue;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px; /* 위 여백 추가 */
+}
+
+/* 검색 버튼 스타일 */
+.search_box {
+    width: 100%;
+    height: 45px;
+    background: #9A98F4;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px; /* 위 여백 추가 */
+}
+
+/* 가입완료 버튼 스타일 */
+.finish_btn {
+    width: 120px;
+    height: 30px;
+    background: #9A98F4;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px; /* 위 여백 추가 */
+}
+
+/* 취소 버튼 스타일 */
+.no_btn {
+    width: 120px;
+    height: 30px;
+    background: #9A98F4;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px; /* 위 여백 추가 */
+    margin-left: 10px; /* 왼쪽 여백 추가 */
+}
+
+/* 생년월일 select 스타일 */
+.birth1, .birth2, .birth3 {
+    width: calc((100% - 20px) / 3); /* 각각의 너비 조절 */
+    margin-top: 10px; /* 위 여백 추가 */
+}
+
+/* 반응형 스타일 (예시) */
+@media screen and (max-width: 600px) {
+    .back {
+        width: 90%;
+        left: 5%;
+    }
+}

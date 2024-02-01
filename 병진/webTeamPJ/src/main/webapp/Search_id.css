@@ -1,0 +1,208 @@
+/* 아이디 찾기 */
+/* 
+box-sizing: border-box;
+
+position: relative;
+width: 500px;
+height: 781px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 2px; */
+
+
+/* 아이디 찾기 */
+.box{
+    position: relative;
+    width: 500px;
+    height: 430px;
+    left: calc(50% - 500px/2);
+    top: 350px;
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+}
+
+
+/* 이름 입력창 */
+.name_box_line{
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 50px;
+    top: 50px;
+    font-size:14px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+
+}
+.name_box_line2{
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 50px;
+    top: 140px;
+    font-size:20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+
+/* 전화번호 입력창 */
+.phone_box{
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 50px;
+    top: 125px;
+    font-size:14px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+
+/* 찾기 박스 */
+.search_btn{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 50px;
+    top: 265px;
+    
+    background: #686DE9;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+
+}
+
+
+/* 비밀번호 찾기*/
+.search_pw{
+    position: absolute;
+    width: 500px;
+    height: 18px;
+    left: 30px;
+    top: 365px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+
+    color: gray;
+}
+
+
+/* 아이디 찾기 */
+.head_txt{
+    position: absolute;
+    width: 98px;
+    height: 24px;
+    left: 390px;
+    top: 310px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+
+}
+
+
+
+/* 로고-removebg-preview 1 */
+.picture{
+    position: absolute;
+    width: 397px;
+    height: 372px;
+    left: calc(50% - 397px/2 - 1.5px);
+    top: -300px;
+    
+    background: url(로고-removebg-preview.png);
+}
+
+
+.id_search{
+    position: absolute;
+    width: 250px;
+    height: 18px;
+    left: 50px;
+    top: 367px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    
+    
+    color: gray;
+    
+}
+.id_search2{
+    position: absolute;
+    width: 250px;
+    height: 18px;
+    left: 50px;
+    top: 250px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    
+    
+    color: gray;
+    
+}
+
+.sign_up_txt{
+    position: absolute;
+    width: 100px;
+    height: 18px;
+    left: 280px;
+    top: 0px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    
+
+    color: gray;
+}

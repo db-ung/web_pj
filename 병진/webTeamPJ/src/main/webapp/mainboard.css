@@ -1,0 +1,175 @@
+/* 로고 이미지*/
+.logoImage {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 10px;
+    top: 10px;
+}
+
+/* 명칭 */
+.title {
+    position: absolute;
+    width: 300px;
+    left: 115px;
+    top: 0%;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+	margin-top:36px;
+    color: black;
+}
+
+/* 광고이미지*/
+.AD {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 20px;
+    top: 120px;
+}
+
+/* 인기게시판1 리스트 */
+.spotlight1 {
+    position: absolute;
+    width: 280px;
+    height: 580px;
+    left: 380px;
+    top: 120px;
+    color:red;
+}
+
+/* 인기게시판2 리스트*/
+.spotlight2 {
+    position: absolute;
+    width: 280px;
+    height: 580px;
+    left: 725px;
+    top: 120px;
+    color:red;
+}
+
+/* 인기게시판3 리스트*/
+.spotlight3 {
+    position: absolute;
+    width: 280px;
+    height: 580px;
+    left: 1080px;
+    top: 120px;
+    color:red;
+}
+
+/* 프로필 박스*/
+.prop {
+    position: absolute;
+    top: 140px;
+	left: 1400px;
+}
+
+/* 프사 이미지*/
+.propImage {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1400px;
+    top: 125px;
+}
+
+/* 닉네임 텍스트*/
+.nickname {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    font-weight: border;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    left: 1400px;
+    top: 160px;
+    margin:0;
+    color:black;
+    margin-left:30px;
+}
+
+/* 등급 이미지*/
+.rank {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1600px;
+    top: 200px;
+}
+
+/* 로그아웃 버튼*/
+.logoutButton {
+    position: absolute;
+    width: 85px;
+    height: 25px;
+    left: 1450px;
+    top: 200px;
+}
+
+/* 마이페이지 버튼*/
+.myPageButton {
+    position: absolute;
+    width: 85px;
+    height: 25px;
+    left: 1550px;
+    top: 200px;
+}
+
+/* 최신글 리스트*/
+.newList {
+    position: absolute;
+    width: 450px;
+    height: 680px;
+    left: 1400px;
+    top: 250px;
+    color: red;
+}
+
+/* 검색창 */
+.searching {
+    position: absolute;
+    border: 5px;
+    border-color: #C08787;
+    width: 850px;
+    height: 50px;
+    left: 550px;
+    top: 35px;
+    background-color: red;
+}
+
+.searchengine{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 480px;
+    top: 35px;
+}
+
+.searchbt{
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    left: 1410px;
+    top: 35px;
+}
+
+body {
+    background-image: url(''); /* 이미지 파일 경로 설정 */
+    background-size: cover; /* 화면에 꽉 차도록 배경 이미지 크기 조절 */
+    background-position: center; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    height: 100vh; /* 화면 높이에 따라 배경 이미지 크기 조절 */
+    margin: 0; /* body의 기본 마진 제거 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* 텍스트 색상 설정 */
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
