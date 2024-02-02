@@ -1,0 +1,5 @@
+- mainboard.jsp -> 검색창 searchkeyword 받아서 게시글 받아오기.
+- PostDAO -> 게시글 검색 메서드 생성 (searchPosts)
+- PostServiceSearch.java (PostCommand에 추가)
+- PostCommandCotroller 
+ -- search.doPosting 맵핑 실행 기능 추가 -> getLIst.jsp(게시글 목록 받아오는 창)
