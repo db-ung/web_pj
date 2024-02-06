@@ -1,1 +1,1 @@
-
+각자 board db에 useridx 추가하시길
