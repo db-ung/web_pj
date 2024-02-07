@@ -1,0 +1,122 @@
+// 게시물 상세 보기
+	public void detailPost(String IDX, HttpServletRequest request, HttpServletResponse response) {
+
+	    conn = null;
+	    st = null;
+	    rs = null;
+
+	    HttpSession session = request.getSession(true);
+
+	    try {
+	        conn = ds.getConnection();
+
+	     // 증가시킬 viewcount
+	        String increaseIsgoodQuery = "UPDATE board SET viewcount = viewcount + 1 WHERE IDX=?";
+	        ps = conn.prepareStatement(increaseIsgoodQuery);
+	        ps.setString(1, IDX);
+	        ps.executeUpdate();
+
+	        // 게시글 정보 조회
+	        String query = "SELECT * FROM board WHERE IDX=?";
+	        ps = conn.prepareStatement(query);
+	        ps.setString(1, IDX);
+	        rs = ps.executeQuery();
+
+	        if (rs.next()) {
+	            List<Map<String, String>> DVPost = new ArrayList<>();
+	            Map<String, String> detailPostMap = new HashMap<>();
+	            detailPostMap.put("DPIdx", rs.getString("IDX"));
+	            detailPostMap.put("DPTitle", rs.getString("TITLE"));
+	            detailPostMap.put("DPContent", rs.getString("CONTENT"));
+	            detailPostMap.put("DPId", rs.getString("ID"));
+	            detailPostMap.put("DPDate", rs.getString("DATE"));
+	            detailPostMap.put("DPTag", rs.getString("tag"));
+	            detailPostMap.put("DPIsgood", rs.getString("isgood"));
+	            detailPostMap.put("DPuseridx", rs.getString("useridx"));
+	            detailPostMap.put("DPViewCount", rs.getString("viewcount"));
+	         // 맵을 리스트에 추가
+	            DVPost.add(detailPostMap);
+	         // 세션에 게시글 정보 저장
+	            session.setAttribute("DPIdx", request.getParameter("DPIdx"));
+	            session.setAttribute("DVPost", DVPost);
+	            // 상세 게시글 페이지로 리다이렉트
+	            response.sendRedirect("detailPost.jsp");
+	        }
+	    } catch (Exception e) {
+	        System.out.println(e.toString());
+	        e.printStackTrace();
+	    } finally {
+	        try {
+	            if (rs != null) {
+	                rs.close();
+	            }
+	            if (ps != null) {
+	                ps.close();
+	            }
+	            if (conn != null) {
+	                conn.close();
+	            }
+	        } catch (Exception e2) {
+	            System.out.println(e2.toString());
+	            e2.printStackTrace();
+	        }
+	    }
+	}
+
+
+
+
+
+public void PostMove(HttpServletRequest request, HttpServletResponse response) {
+
+		conn = null;
+		st = null;
+		rs = null;
+
+		HttpSession session = request.getSession(true);
+		session.setAttribute("newBoardList", null);
+		try {
+			conn = ds.getConnection();
+			String Query = "select * from board order by DATE desc";
+			ps = conn.prepareStatement(Query);
+			rs = ps.executeQuery();
+			List<Map<String, String>> boardList = new ArrayList<>();
+			while (rs.next()) {
+				Map<String, String> boardInfo = new HashMap<>();
+				boardInfo.put("tag", rs.getString("tag"));
+				boardInfo.put("title", rs.getString("title"));
+				boardInfo.put("idx", rs.getString("idx"));
+				boardInfo.put("id", rs.getString("id"));
+				boardInfo.put("date", rs.getString("date"));
+				boardInfo.put("isgood", rs.getString("isgood"));
+				boardInfo.put("viewcount", rs.getString("viewcount"));
+
+				boardList.add(boardInfo);
+			}
+
+			session.setAttribute("newBoardList", boardList);
+		} catch (Exception e) {
+			System.out.println(e.toString());
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null) {
+					rs.close();
+				}
+				if (st != null) {
+					st.close();
+				}
+				if (conn != null) {
+					conn.close();
+				}
+			} catch (Exception e2) {
+				System.out.println(e2.toString());
+				e2.printStackTrace();
+			}
+		}
+	}
+
+
+
+
+
