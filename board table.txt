@@ -1,0 +1,11 @@
+Table: board
+Columns:
+IDX int AI PK 
+tag varchar(50) 
+ID varchar(255) 
+TITLE varchar(500) 
+CONTENT varchar(2000) 
+DATE datetime 
+FILE blob 
+isgood int 
+useridx int

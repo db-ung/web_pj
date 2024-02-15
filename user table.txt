@@ -1,0 +1,11 @@
+Table: user
+Columns:
+idx int AI 
+id varchar(255) PK 
+nickname varchar(255) 
+pw varchar(255) 
+name varchar(255) 
+tel varchar(255) 
+address varchar(255) 
+email varchar(255) 
+birth varchar(255)
